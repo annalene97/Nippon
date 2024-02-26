@@ -1,1 +1,45 @@
+/* -- RESET -- */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
 
+/* --- Generel style --- */
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+  --clr-background1: #FFF9F8;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: var(--clr-background1);
+}
+
+/* --- BUDGETKASSEN --- */
+
+.budget-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.ikon-budgetkasse {
+    height: 4rem;
+    width: auto;
+    margin-top: 0;
+}
+
+.budget-h1 {
+    font-family: 'dosis', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.5rem;
+}
