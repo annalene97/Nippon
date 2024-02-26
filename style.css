@@ -234,6 +234,11 @@ h4 {
     color: #C7E9FC;
   }
 
+  .fa-x-twitter { /* --- erstatning af twitter logo med X --- */
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+
 img {
     display: block;
     width: 100%;
