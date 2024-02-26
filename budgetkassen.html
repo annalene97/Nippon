@@ -12,11 +12,11 @@
         <!-- CSS + JS + Fonts + icons -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="script.js">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- den her har adgang til alle ikoner (de frie) -->
+        
         <link rel="stylesheet" href="budgetkasse.css">
     </head>
 <body>
@@ -74,20 +74,61 @@
           </div>
         </nav>
     </header>
-<main>
-    <div class="budget-container">
-        <img src="/img/ikoner/Budgetkassen.png" alt="Budgetkasse ikon" class="ikon-budgetkasse">
-        <h1 class="budget-h1">Budgetkassen</h1>
-    </div>
-    <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster">
-    <div class="bestil-container">
-        
-    </div>
+
+    <!-- Bestillingsvindue -->
+    <main>
+        <div class="budget-container">
+            <div class="budget-titel">
+                <img src="/img/ikoner/Budgetkassen.png" alt="Budgetkasse ikon" class="ikon-budgetkasse">
+                <h1 class="budget-h1">Budgetkassen</h1>
+            </div>
+            <div class="bestil-container">
+                <div class="bestil-container2">
+                    <p class="p-vaelg">Vælg antal retter og personer, der skal spise med. </p>
+                    <div class="vaelg-container">
+                        <div class="vaelg-personer">
+                            <h3 class="personer-h3">Antal personer:</h3>
+                            <div>
+                                <div class="cirkel">1</div>
+                                <div class="cirkel">2</div>
+                                <div class="cirkel">3</div>
+                                <div class="cirkel">4</div>
+                            </div>
+                        </div>
+                        <div class="vaelg-retter">
+                            <h3 class="retter-h3">Antal retter:</h3>
+                            <div>
+                                <div class="cirkel">2</div>
+                                <div class="cirkel">3</div>
+                                <div class="cirkel">4</div>
+                                <div class="cirkel">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p-vaelg">Du kan altid ændre i din ordre senere.</p>
+                </div>
+                <div class="pris-container">
+                    <div class="pris-portion">
+                        <h4>Pris pr. portion:</h4>
+                        <p id="pris-portion">39,00 kr.</p>
+                    </div>
+                    <div class="pris-alt">
+                        <h4>Pris i alt:</h4>
+                        <p id="pris-i-alt">117,00 kr.</p>
+                    </div>
+                    <p class="levering-p">Gratis levering
+                    <i class="fa-solid fa-circle-check"></i> </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster" class="budget-moenster">
 
 
-    <!--SHOP CONTAINER -->
- <div id="shop-container">
-    <div id="shop">
+
+    <!-- MÅLTIDS CONTAINER -->
+ <div id="retter-container">
+    <div id="retter">
       <img src="image/endeligprodukt.jpg" alt="Produkt 1">
       <h3>Zero summer citrus</h3>
       <p>Øl & Citrus</p>
