@@ -93,7 +93,7 @@ body {
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        margin-top: 2rem;
+        margin-top: 0.02rem;
     }
 
     .dropdown-content a {
@@ -103,7 +103,7 @@ body {
         text-decoration: none;
         display: block;
         text-align: left;
-        font-weight: 300;
+        font-weight: 200;
     }
 
     .dropdown-content p {
