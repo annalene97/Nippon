@@ -28,15 +28,17 @@ body {
     margin-right: 1.5rem;
 }
 
-    .header_container {
-        display: flex;
-        position: fixed;
-        top: 60px;
-        width: 100%;
-        background-color: var(--clr-background1);
-        margin-bottom: 1rem;
-        z-index: 9999;
-    }
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-background1);
+    margin-bottom: 1rem;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 
     nav {
         display: flex;
@@ -131,7 +133,6 @@ body {
   #footer-main {
     background-color: #C7E9FC;
     padding: 40px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     font-family: 'Montserrat';
@@ -232,3 +233,11 @@ h4 {
     background: rgb(0, 0, 0);
     color: #C7E9FC;
   }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 100px; /* Adjust this margin to create space between header and banner */
+}
+
