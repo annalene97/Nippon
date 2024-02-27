@@ -259,6 +259,10 @@ button.active {
     position: relative;;
 }
 
+.ret.hidden { /* Til javascript: filtreringsknapper */
+    display: none;
+}
+
 .img-ret {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
