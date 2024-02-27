@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Nippon forside</title>
-    <!-- SEO -->
-    <meta name="keywords" content="måltidskasse, japansk mad, sushi, ramen, billige måltidskasser, sunde måltidskasser">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nippon">
-    <meta property="og:site_name" content="Måltidskasse">
-    <meta property="og:description" content="Japansk inspireret måltidskasse">
-    <meta name="author" content="Anna Lene Rasmussen, Claus Moldt, Patrick Pedersen, Søren Duong">
-    <meta name="geo.placename" content="Aarhus">
-    <meta property="og:url" content="">
-    <meta property="og:locale" content="da_dk">
-    <!-- description -->
-    <meta name="description" content="Velkommen til Nippon, her finder du japansk inspireret mad i form af måltidskasser">
-    <!-- CSS + JS + Fonts + icons -->
-    <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title>Måltidskasser</title>
+        <!-- SEO -->
+        <meta name="keywords" content="måltidskasse, japansk mad, sushi, ramen, billige måltidskasser, sunde måltidskasser">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Nippon">
+        <meta property="og:site_name" content="Bæredygtighed">
+        <meta property="og:description" content="Japansk inspireret måltidskasse">
+        <meta name="author" content="Anna Lene Rasmussen, Claus Moldt, Patrick Pedersen, Søren Duong">
+        <meta name="geo.placename" content="Aarhus">
+        <meta property="og:url" content="">
+        <meta property="og:locale" content="da_dk">    
+        <!-- description -->
+        <meta name="description" content="Bestil din næste måltidskasse til billig pris. Se vores udvalg af japanske retter.">
+        <!-- CSS + JS + Fonts + icons -->
+        <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- den her har adgang til alle ikoner (de frie) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favikon -->
+        <link rel="icon" type="image/x-icon" href="/img/favicon (1).png">
+        
+        <link rel="stylesheet" href="maaltidskasser.css">
+    </head>
 <body>
-    <!-- Header -->
-  <header class="header_container">
-    <nav>
-        <div class="head1">
-            <div class="topnav" id="myTopnav">
+    <header class="header_container">
+        <nav>
+            <div class="head1">
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#">Måltidskasser</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="budgetkassen.html">Budgetkassen</a>
+                            <a href="#">bla bla bla</a>
+                            <a href="#">bla bla bla</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="topnav" id="myTopnav">
+                  <div class="dropdown">
+                      <a class="dropbtn" href="#">Det japanske køkken</a>
+                      <i class="fa fa-caret-down"></i>
+                      <div class="dropdown-content">
+                          <a href="#">bla bla bla</a>
+                          <a href="#">bla bla bla</a>
+                          <a href="#">bla bla bla</a>
+                      </div> 
+                  </div>
+              </div>
+            </div>
+            <div class="headerlogo">
+                <a href="index.html"><img class="logo" src="img/nipponheaderlogo.png" alt="NipponLogo"></a>
+            </div>
+            <div class="head2">
+              <div class="topnav" id="myTopnav">
                 <div class="dropdown">
-                    <a class="dropbtn" href="#">Måltidskasser</a>
+                    <a class="dropbtn" href="#">Bæredygtighed</a>
                     <i class="fa fa-caret-down"></i>
                     <div class="dropdown-content">
                         <a href="#">bla bla bla</a>
@@ -43,7 +74,7 @@
             </div>
             <div class="topnav" id="myTopnav">
               <div class="dropdown">
-                  <a class="dropbtn" href="#">Det japanske køkken</a>
+                  <a class="dropbtn" href="#">Kontakt</a>
                   <i class="fa fa-caret-down"></i>
                   <div class="dropdown-content">
                       <a href="#">bla bla bla</a>
@@ -52,85 +83,67 @@
                   </div> 
               </div>
           </div>
+        </nav>
+    </header>
+
+<!-- MAAlTIDSKASSER -->
+    
+<main>
+    <div class="maaltidskasser-container">
+        <div class="maaltidskasser-titel">
+            <h1 class="maaltidskasser-h1">Måltidskasser</h1>
         </div>
-        <div class="headerlogo">
-            <a href="index.html"><img class="logo" src="img/nipponheaderlogo.png" alt="NipponLogo"></a>
+        <div class="image-container">
+            <img src="path/to/image1.jpg" alt="Image 1">
+            <img src="path/to/image2.jpg" alt="Image 2">
+            <img src="path/to/image3.jpg" alt="Image 3">
         </div>
-        <div class="head2">
-          <div class="topnav" id="myTopnav">
-            <div class="dropdown">
-                <a class="dropbtn" href="#">Bæredygtighed</a>
-                <i class="fa fa-caret-down"></i>
-                <div class="dropdown-content">
-                    <a href="#">bla bla bla</a>
-                    <a href="#">bla bla bla</a>
-                    <a href="#">bla bla bla</a>
-                </div> 
-            </div>
-        </div>
-        <div class="topnav" id="myTopnav">
-          <div class="dropdown">
-              <a class="dropbtn" href="#">Kontakt</a>
-              <i class="fa fa-caret-down"></i>
-              <div class="dropdown-content">
-                  <a href="#">bla bla bla</a>
-                  <a href="#">bla bla bla</a>
-                  <a href="#">bla bla bla</a>
-              </div> 
-          </div>
-      </div>
-    </nav>
-</header>
-
-<img src="img/maaltider/Lag 2.jpg" alt="banner">
-
-
-<!-- Evt search bar et sted
-<input type="text" id="search" placeholder="Search...">
-  <button onclick="search()">Search</button>
-  <p id="output"></p>  
--->
-
+    </div>
+</main>
 
 <!-- Footer -->
 <footer id="footer-main">
-  <div class="footer-grid">
-    <section class="footer-1">
-          <h4>Find rundt på siden</h4>
-          <br>
-          <p><a href="#">Se udvalget af måltidskasser</a></p>
-          <p><a href="#">Din profil</a></p>
-          <p><a href="#">Hvad er det japanske køkken?</a></p>
-          <p><a href="#">Læs om vores bæredygtige profil</a></p>
-          <p><a href="#">FAQ</a></p>
-        </section>
-        <section class="footer-2">
-             <h4>Kundeservice</h4>
-             <br>
-            <p><a href="#">Kundeservice@nippon.dk</a></p>
-            <p><a href="#">Tlf. 12 345 678</a></p>
-            <p><a href="#">Man-torsdag: 9-12 & 13-16</a></p>
-            <p><a href="#">Fredag: 9-12 & 13-14</a></p>
-        </section>
-        <section class="footer-3">
-         <h4>Adresse</h4>
-         <br>
-         <p><a href="#">Nippon A/S</a></p>
-         <p><a href="#">Graven 24</a></p>
-         <p><a href="#">Aarhus C 8000</a></p>
-         <p><a href="#">CVR: 8765432</a></p>
-    </section>
-    <!-- Footer logo og icons -->
-   <section class="footer-4">
-            <a href="index.html"><img class="logo2" src="img/nipponfooterlogo.png" alt="NipponLogo"></a>
+    <div class="footer-grid">
+      <section class="footer-1">
+            <h4>Find rundt på siden</h4>
             <br>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-  </section>
-   </div>
-</footer>
+            <p><a href="#">Se udvalget af måltidskasser</a></p>
+            <p><a href="#">Din profil</a></p>
+            <p><a href="#">Hvad er det japanske køkken?</a></p>
+            <p><a href="#">Læs om vores bæredygtige profil</a></p>
+            <p><a href="#">FAQ</a></p>
+          </section>
+          <section class="footer-2">
+               <h4>Kundeservice</h4>
+               <br>
+              <p><a href="#">Kundeservice@nippon.dk</a></p>
+              <p><a href="#">Tlf. 12 345 678</a></p>
+              <p><a href="#">Man-torsdag: 9-12 & 13-16</a></p>
+              <p><a href="#">Fredag: 9-12 & 13-14</a></p>
+          </section>
+          <section class="footer-3">
+           <h4>Adresse</h4>
+           <br>
+           <p><a href="#">Nippon A/S</a></p>
+           <p><a href="#">Graven 24</a></p>
+           <p><a href="#">Aarhus c 8000</a></p>
+           <p><a href="#">CVR: 8765432</a></p>
+      </section>
+      <!-- Footer logo og icons -->
+     <section class="footer-4">
+              <a href="index.html"><img class="logo2" src="img/nipponfooterlogo.png" alt="NipponLogo"></a>
+              <br>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-brands fa-x-twitter"></a> <!-- erstatning af twitterlogo med X -->
+    </section>
+     </div>
+  </footer>
 
+
+    
+</main>
+    
 </body>
 </html>
