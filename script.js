@@ -28,6 +28,69 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // VALG AF MÅLTIDSKASSE 
+// Selecting elements
+const cirklerPersoner = document.querySelectorAll('.vaelg-personer .cirkel');
+const cirklerRetter = document.querySelectorAll('.vaelg-retter .cirkel');
+const prisPortion = document.getElementById('pris-portion');
+const prisIAlt = document.getElementById('pris-i-alt');
+
+// Function to update price per portion and total price based on selected options
+function updatePrices() {
+    // Get the selected number of persons and meals
+    const selectedPersoner = parseInt(document.querySelector('.vaelg-personer .cirkel.selected').textContent);
+    const selectedRetter = parseInt(document.querySelector('.vaelg-retter .cirkel.selected').textContent);
+
+    // Calculate the base price per portion
+    let basePrice = selectedRetter === 1 ? 41 : selectedRetter === 2 ? 41 : 41 - (selectedRetter - 2) * 2;
+
+    // Adjust the base price based on the number of persons
+    let prisPerPortion;
+    switch (selectedPersoner) {
+        case 1:
+            prisPerPortion = basePrice;
+            break;
+        case 2:
+            prisPerPortion = basePrice - 1;
+            break;
+        case 3:
+            prisPerPortion = basePrice - 2;
+            break;
+        case 4:
+            prisPerPortion = basePrice - 3;
+            break;
+        default:
+            prisPerPortion = basePrice;
+    }
+
+    // Update the displayed price per portion
+    prisPortion.textContent = prisPerPortion.toFixed(2) + ' kr.';
+
+    // Calculate and update the total price
+    const totalPris = selectedPersoner * selectedRetter * prisPerPortion;
+    prisIAlt.textContent = totalPris.toFixed(2) + ' kr.';
+}
+
+// Add event listeners to cirkler elements in vaeg-personer div
+cirklerPersoner.forEach(cirkel => {
+    cirkel.addEventListener('click', function() {
+        cirklerPersoner.forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+        updatePrices();
+    });
+});
+
+// Add event listeners to cirkler elements in vaeg-retter div
+cirklerRetter.forEach(cirkel => {
+    cirkel.addEventListener('click', function() {
+        cirklerRetter.forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+        updatePrices();
+    });
+});
+
+// Initial price update
+updatePrices();
+
 
 
 
@@ -37,7 +100,7 @@ const filterKnapper = document.querySelectorAll(".knap button");
 const retter = document.querySelectorAll(".retter-grid .ret");
 
 const filterRetter = e => {
-    document.querySelector(".active").classList.remove("active"); //Active classen slettes eller tilføjes knapperne.
+    document.querySelector(".active").classList.remove("active"); //Active classen slettes eller tilføjes til knapperne.
     e.target.classList.add("active");
 
     retter.forEach(ret => { //Retterne skjules, hvis ikke de indeholder den respektive kategori, der er aktiv.

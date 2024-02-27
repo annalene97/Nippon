@@ -113,6 +113,10 @@ body {
     cursor: pointer;
 }
 
+.selected { /* Den cirkel der er valgt fra start, når burgeren åbner siden */
+    background-color: var(--clr-lyseroed);
+}
+
 .pris-container {
     padding: 2rem 10rem;
     background-color: var(--clr-lyseblaa);
