@@ -1,0 +1,48 @@
+/* -- RESET -- */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+/* --- Generel style --- */
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+  --clr-background1: #FFF9F8;
+  --clr-lyseblaa: #C7E9FC;
+  --clr-morkeblaa: #246EB9;
+  --clr-lyseroed: #FFCDC2;
+  --clr-morkroed: #FD6947;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: var(--clr-background1);
+}
+
+/* --- MAALTIDSKASSER --- */
+
+.maaltidskasser-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 2rem; 
+}
+
+.maaltidskasser-h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.maaltidskasser-titel {
+    text-align: center; 
+    width: 100%; 
+}
