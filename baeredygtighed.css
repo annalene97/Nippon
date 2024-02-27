@@ -131,22 +131,41 @@ body {
 
 /* --- MAIN START --- */
 
+
+.baerikoner {
+    display: block;
+    justify-content:center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 10%;
+}
+
+
 .kasse-container {
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    justify-content: center; /* Center items horizontally */
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .kasse {
     display: flex;
-    border: 2px solid black;
     padding: 8rem;
+    max-width: 500px;
+    max-height: 500px;
     background-color: #C7E9FC;
     border-radius: 6%;
-    box-shadow: ;
-    
+    filter: drop-shadow(0.5px 0.5px 10px grey);
+    overflow: hidden;
+}
+
+.kasse h4 {
+    font-family: dosis;
+    font-weight: bold;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
