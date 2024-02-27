@@ -135,7 +135,7 @@ body {
 
 .groenne {
     display: flex;
-    padding: 0;
+    padding: 0 0 10rem;
 }
 
 .groenne img {
@@ -165,35 +165,10 @@ body {
 
 /* --- De Blå Kasser START --- */
 
-/*.baerikoner-grid {
-    display: grid;
-    grid-template-columns: 30% 20% 30% 20% 30%;
-    column-gap: 10rem;
-    justify-content:space-between;
-    align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 20%;
-}*/
-
-.itemgrid {
-    display: grid;
-    justify-items: center;
-}
-
-.grid-item {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    padding: 0rem 10rem;
-}
-
 
 .kasse-container-grid {
     display: grid;
-    grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
-    justify-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .kasse-container-grid h4 {
@@ -204,12 +179,26 @@ body {
     padding-bottom: 10px;
 }
 
+
+.kasse img {
+    display: block;
+    width: 30%;
+    position: absolute;
+    margin-top: -6.5rem;
+    margin-left: 5rem;
+}
+
+
 .kasse {
+    position: relative;
     background-color: #C7E9FC;
     border-radius: 20px;
-    padding:2rem;
-    box-shadow: 0 0 9px 1px rgba(0,0,0,0.3)
+    width: 20rem;
+    padding: 2rem;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.3);
 }
+
+
 
 
 /* --- De Blå Kasser SLUT --- */
