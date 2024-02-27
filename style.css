@@ -132,6 +132,32 @@ body {
     z-index: 0;
 }
 
+/* --- forside h1 --- */
+.banner_h1 {
+    font-family: "Dosis", sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+    color: #535353;
+    position: absolute;
+    top: 15%; /* Adjust the top value to position it at the center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner_h2
+{
+    font-family: "Dosis", sans-serif;
+    font-weight:300;
+    font-size: 50px;
+    color: #535353;
+    position: absolute;
+    top: 35%; /* Adjust the top value to position it at the center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
   /* --- Footer GRID --- */
 
   #footer-main {
@@ -390,7 +416,7 @@ img {
 .bestil-button {
     display: inline-block;
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
@@ -403,6 +429,7 @@ img {
     color: #ffffff;
     background-color: #256EB9;
     border-radius: 20px;
+    
     transition: background-color 0.3s, color 0.3s;
     font-family: "Dosis", sans-serif;
 }
@@ -418,6 +445,11 @@ img {
 #læsmere {
     color: #FF6148;
     text-decoration: none;
+}
+
+#læsmere:hover {
+    color: #FF6148;
+    text-decoration: underline;
 }
 
 #læsmere:hover {
