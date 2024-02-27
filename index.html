@@ -20,7 +20,7 @@
     <!-- CSS + JS + Fonts + icons -->
     <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
         <div class="head1">
             <div class="topnav" id="myTopnav">
                 <div class="dropdown">
-                    <a class="dropbtn" href="maaltidskasser.html">Måltidskasser</a>
+                    <a class="dropbtn" href="#">Måltidskasser</a>
                     <i class="fa fa-caret-down"></i>
                     <div class="dropdown-content">
                         <a href="budgetkassen.html">Budgetkassen</a>
@@ -61,7 +61,7 @@
         <div class="head2">
           <div class="topnav" id="myTopnav">
             <div class="dropdown">
-                <a class="dropbtn" href="baeredygtighed.html">Bæredygtighed</a>
+                <a class="dropbtn" href="#">Bæredygtighed</a>
                 <i class="fa fa-caret-down"></i>
                 <div class="dropdown-content">
                     <a href="baeredygtighed.html">Vision & Mission</a>
@@ -84,8 +84,14 @@
     </nav>
 </header>
 
-<img class="forsidebanner" src="img/Nipponbanner2.png" alt="banner">
-<a href="#" class="bestil-button">Bestil</a>
+<!-- Forside banner -->
+<img class="forsidebanner" src="img/Nipponbanner2.jpg" alt="banner">
+<h1 class="banner_h1">Nippon<br></h1>
+<h2 class="banner_h2">Måltidskasser</h2>
+
+<!-- Bestil button animation -->
+<div class="spelling-text" id="spelling-text"></div>
+    <a href="budgetkassen.html" class="bestil-button" id="spell-button">Bestil</a>
 
 <main>
      <!-- artikler -->
@@ -123,8 +129,6 @@
       <!-- infographic -->
       <img class="infographic" src="img/ikoner/infographic.png" alt="infographic">
 </main>
-
-
 
 <!-- Footer -->
 <footer id="footer-main">
