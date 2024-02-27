@@ -20,6 +20,7 @@ const filterRetter = e => {
 
 filterKnapper.forEach(button => button.addEventListener("click", filterRetter)); 
 
+// TILFØJELSE AF RET
 
 
 
