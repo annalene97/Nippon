@@ -113,11 +113,13 @@ body {
 /* --- Hover for måltidskasse knapper ---- */
 
 .info-button:hover {
-    background-color: rgba(255, 249, 248, 0.8); 
+    color: #FD6947;
 }
 
 .vaelg-button:hover {
-    background-color: rgba(253, 105, 71, 0.8); 
+    background-color: #FFF9F8;
+    color: #FD6947;
+    border: 2px solid #FD6947;
 }
 
 /*--- Banner billede ---*/
@@ -188,8 +190,9 @@ body {
 }
 
 .social-icons a:hover {
-    color: #ff6347; /* Change icon color on hover if needed */
-    background-color: #FFF9F8; /* Change the background color on hover if needed */
+    color: #ff6347; 
+    background-color: #FFF9F8; 
+    border: 5px solid #ff6347;
 }
 
 
