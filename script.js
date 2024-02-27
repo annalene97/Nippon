@@ -70,7 +70,7 @@ function updatePrices() {
     prisIAlt.textContent = totalPris.toFixed(2) + ' kr.';
 }
 
-// Add event listeners to cirkler elements in vaeg-personer div
+// Add event listeners to cirkler elements in vaelg-personer div
 cirklerPersoner.forEach(cirkel => {
     cirkel.addEventListener('click', function() {
         cirklerPersoner.forEach(c => c.classList.remove('selected'));
@@ -79,7 +79,7 @@ cirklerPersoner.forEach(cirkel => {
     });
 });
 
-// Add event listeners to cirkler elements in vaeg-retter div
+// Add event listeners to cirkler elements in vaelg-retter div
 cirklerRetter.forEach(cirkel => {
     cirkel.addEventListener('click', function() {
         cirklerRetter.forEach(c => c.classList.remove('selected'));
