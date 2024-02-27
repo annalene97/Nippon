@@ -129,6 +129,20 @@ body {
 /* --- HEADER SLUT --- */
 
 
+/* --- MAIN START --- */
+
+.kasse-container {
+    display: flex;
+}
+
+.kasse {
+    display: 1;
+    border: 2px solid black;
+}
+
+
+
+/*--- MAIN SLUT ---*/
 
 
  /* --- Footer GRID --- */
