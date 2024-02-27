@@ -1,4 +1,4 @@
-// VALG AF MÅLTIDSKASSE - fra chatGPT --- fungerer ikke helt
+// VALG AF MÅLTIDSKASSE - fra chatGPT --- fungerer ikke rigtigt
 // Select all 'cirkel' elements
 const cirklerPersoner = document.querySelectorAll('.vaelg-personer .cirkel');
 const cirklerRetter = document.querySelectorAll('.vaelg-retter .cirkel');
