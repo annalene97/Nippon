@@ -139,7 +139,8 @@ body {
 }
 
 .groenne img {
-    width: 50%;
+    max-width: 50%;
+    height: auto;
     margin-top: 5rem;
     border-radius: 0px 20px 20px 0px;
 }
@@ -199,8 +200,6 @@ body {
 }
 
 
-
-
 /* --- De Blå Kasser SLUT --- */
 
 /* --- Nippon & Økologi Section START --- */
@@ -215,18 +214,22 @@ body {
 }
 
 #oeko{
-    max-width: 60%;
-    max-height: 60%;
-    justify-items: center;
+    max-width: 50%;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
-    z-index: 5;
     position: absolute;
+    margin-left: 23.5rem;
+    margin-bottom: -3rem;
+    z-index: 5;
 
 }
 
 #moenster {
     position: relative;
     width: 100%;
+    margin-top: 10rem;
 }
 
 .artikel-container {
