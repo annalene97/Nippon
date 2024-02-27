@@ -175,37 +175,27 @@ body {
     width: 10%;
 }
 
-
-/*.kasse-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.kasse-container-grid {
+    display: grid;
+    max-width: 75%;
+    grid-template-columns: 30% 10% 30% 10% 30%;
 }
 
-.kasse-container h4, .kasse-container p {
-    display: block;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.kasse-container-grid h4 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .kasse {
-    display:
-    padding: 8rem;
-    max-width: 500px;
-    max-height: 500px;
     background-color: #C7E9FC;
-    border-radius: 6%;
-    justify-content: space-between;
-    filter: drop-shadow(0.1px 0.1px 3px grey);
-    overflow:
+    border-radius: 20px;
+    padding:2rem;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.3)
 }
 
-.kasse h4 {
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    font-size: x-large;
-}
 
 /* --- De Blå Kasser SLUT --- */
 
