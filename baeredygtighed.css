@@ -1,0 +1,276 @@
+/* -- RESET -- */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+/* --- Generel style --- */
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+  --clr-background1: #FFF9F8;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: var(--clr-background1);
+}
+
+/* --- HEADER --- */
+
+.head1, .head2  {
+    width: 50%;
+    margin-right: 1.5rem;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-background1);
+    padding: 1rem 0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .logo { /* Header logo */
+        position: absolute;
+        max-width: 10%;
+        margin-top: 30px;
+        transform: translate(-50%, -50%);
+    } 
+
+    .head1, /* De 4 menupunkter */
+    .head2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .topnav {
+        overflow: hidden;
+        font-family: 'Dosis';
+       
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Dosis';
+        font-size: 20px;
+    }
+    .dropdown .dropbtn {
+        font-size: 23px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        color: var(--clr-text-black);
+        background-color: inherit;
+        font-family: inherit;
+        margin: auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--clr-background1);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 0.02rem;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: var(--clr-white);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-weight: 200;
+    }
+
+    .dropdown-content p {
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color: rgba(153, 152, 148, 0);
+        color: var(--clr-text-black);
+    }
+
+    .dropdown-content a:hover {
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+/* --- HEADER SLUT --- */
+
+
+/* --- MAIN START --- */
+
+.kasse-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.kasse {
+    display: flex;
+    border: 2px solid black;
+    padding: 8rem;
+    background-color: #C7E9FC;
+    border-radius: 6%;
+    box-shadow: ;
+    
+}
+
+
+
+/*--- MAIN SLUT ---*/
+
+
+ /* --- Footer GRID --- */
+
+ #footer-main {
+    background-color: #C7E9FC;
+    padding: 40px;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 180px;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        padding-left: 20px;
+    }
+}
+
+/* --- Footer style --- */
+section 
+.footer-1 
+.footer-2 
+.footer-3 
+ {
+    background-color: none;
+    font-family: 'Montserrat';
+}
+
+.logo2 /* --- Footer logo --- */ {
+   max-width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+section {
+    color: #000000;
+    padding: 20px;
+    font-family: 'Montserrat';
+}
+
+section a {
+    color: #000000;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px 0;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* Footer icons */
+
+.fa {
+    padding: 5px;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  
+ 
+  .fa-facebook {
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+  
+  .fa-linkedin {
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+  
+ 
+  .fa-twitter {
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+  
+  .fa-instagram {
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+
+  .fa-x-twitter { /* --- erstatning af twitter logo med X --- */
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0px; 
+}

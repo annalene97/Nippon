@@ -10,13 +10,16 @@
         <!-- description -->
         <meta name="description" content="Bestil din næste måltidskasse til billig pris. Se vores udvalg af japanske retter.">
         <!-- CSS + JS + Fonts + icons -->
+        <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="script.js">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- den her har adgang til alle ikoner (de frie) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- Favikon -->
+        <link rel="icon" type="image/x-icon" href="/img/favicon (1).png">
+        
         <link rel="stylesheet" href="budgetkasse.css">
     </head>
 <body>
@@ -28,7 +31,7 @@
                         <a class="dropbtn" href="#">Måltidskasser</a>
                         <i class="fa fa-caret-down"></i>
                         <div class="dropdown-content">
-                            <a href="#">bla bla bla</a>
+                            <a href="budgetkassen.html">Budgetkassen</a>
                             <a href="#">bla bla bla</a>
                             <a href="#">bla bla bla</a>
                         </div> 
@@ -74,68 +77,297 @@
           </div>
         </nav>
     </header>
-<main>
-    <div class="budget-container">
-        <img src="/img/ikoner/Budgetkassen.png" alt="Budgetkasse ikon" class="ikon-budgetkasse">
-        <h1 class="budget-h1">Budgetkassen</h1>
-    </div>
-    <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster">
-    <div class="bestil-container">
-        
-    </div>
+
+    <!-- Bestillingsvindue -->
+    <main>
+        <div class="budget-container">
+            <div class="budget-titel">
+                <img src="/img/ikoner/Budgetkassen.png" alt="Budgetkasse ikon" class="ikon-budgetkasse">
+                <h1 class="budget-h1">Budgetkassen</h1>
+            </div>
+            <div class="bestil-container">
+                <div class="bestil-flex">
+                    <p class="p-vaelg">Vælg antal retter og personer, der skal spise med. </p>
+                    <div class="vaelg-container">
+                        <div class="vaelg-personer">
+                            <h2 class="personer-h2">Antal personer:</h2>
+                            <div>
+                                <div class="cirkel">1</div>
+                                <div class="cirkel">2</div>
+                                <div class="cirkel">3</div>
+                                <div class="cirkel">4</div>
+                            </div>
+                        </div>
+                        <div class="vaelg-retter">
+                            <h2 class="retter-h2">Antal retter:</h2>
+                            <div>
+                                <div class="cirkel">2</div>
+                                <div class="cirkel">3</div>
+                                <div class="cirkel">4</div>
+                                <div class="cirkel">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p-vaelg">Du kan altid ændre i din ordre senere.</p>
+                </div>
+                <div class="pris-container">
+                    <div class="pris-portion">
+                        <h3>Pris pr. portion:</h3>
+                        <p id="pris-portion">39,00 kr.</p>
+                    </div>
+                    <div class="pris-alt">
+                        <h3>Pris i alt:</h3>
+                        <p id="pris-i-alt">117,00 kr.</p>
+                    </div>
+                    <p class="levering-p">Gratis levering
+                    <i class="fa-solid fa-circle-check"></i> </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster" class="budget-moenster">
+
+        <button class="knap-blaa">Vælg retter</button>
 
 
-    <!--SHOP CONTAINER -->
- <div id="shop-container">
-    <div id="shop">
-      <img src="image/endeligprodukt.jpg" alt="Produkt 1">
-      <h3>Zero summer citrus</h3>
-      <p>Øl & Citrus</p>
-      <p>0.0%</p>
-      <button onclick="addToCart()">Tilføj til kurv</button>
+    <!-- Filtreringsknapper -->
+    <h1 class="retter-h1">Vores udvalg af retter</h1>
+    <p class="retter-p">Vælg de retter, du ønsker i din måltidskasse. Brug filtrene til nemmere at finde de bedste måltider for dig.</p>
+    <div class="filter">
+        <div class="knap">
+            <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig ret" class="ikon-ret">
+            <button>Børnevenlig</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Vegetar.png" alt="Vegetar ret" class="ikon-ret">
+            <button>Vegetar</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Glutenfri.png" alt="Glutenfri ret" class="ikon-ret">
+            <button>Glutenfri</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Høj protein.png" alt="Proteinrig ret" class="ikon-ret">
+            <button>Høj protein</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Laktosefri.png" alt="Laktosefri ret" class="ikon-ret">
+            <button>Laktosefri</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Veganer.png" alt="Vegansk ret" class="ikon-ret">
+            <button>Vegansk</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Pescetar.png" alt="Pescetar ret" class="ikon-ret">
+            <button>Pescetar</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Lav kalorie.png" alt="Kaloriefattig ret" class="ikon-ret">
+            <button>Kaloriefattig</button>
+        </div>
+        <div class="knap">
+            <img src="img/ikoner/Hurtig.png" alt="Hurtig ret" class="ikon-ret">
+            <button>Hurtig</button>
+        </div>
     </div>
-   <!--SHOP1 -->
-         <div id="shop1">
-            <img src="image/pilsnerprodukt.jpg" alt="Produkt 2">
-            <h3>Zero summer pilsner</h3>
-            <p>Samme smag, færre kalorier</p>
-            <p>0.0%</p>
-            <button onclick="addToCart()">Tilføj til kurv</button>
-         </div>
-  <!--SHOP2 -->
-         <div id="shop2">
-            <img src="image/kommersnart.jpg" alt="Produkt 2">
-            <h3>IPA</h3>
-            <p>TrøjborgBryg IPA</p>
-            <p>4.5%</p>
-            <button onclick="addToCart()">Tilføj til kurv</button>
-         </div>
-   <!--SHOP3 -->
-         <div id="shop3">
-            <img src="image/kommersnart.jpg" alt="Produkt 2">
-            <h3>Mørk lager</h3>
-            <p>TrøjborgBryg Mørk øl</p>
-            <p>6.5%</p>
-            <button onclick="addToCart()">Tilføj til kurv</button>
-         </div>
-   <!--SHOP4 -->
-         <div id="shop4">
-            <img src="image/kommersnart.jpg" alt="Produkt 2">
-            <h3>Lys Liberté</h3>
-            <p>TrøjborgBryg Lys øl</p>
-            <p>4.5%</p>
-            <button onclick="addToCart()">Tilføj til kurv</button>
-         </div>
-   <!--SHOP5 -->
-         <div id="shop5">
-            <img src="image/kommersnart.jpg" alt="Produkt 2">
-            <h3>Tornado Tripel</h3>
-            <p>TrøjborgBryg Special øl</p>
-            <p>5.5%</p>
-            <button onclick="addToCart()">Tilføj til kurv</button>
-         </div>
-   </div>
-</main>
+    <p class="retter-p">Vi opdaterer løbende med nye lækre opskrifter!</p>
+
+    <!-- Oversigt over retter -->
+        <div class="retter-grid">
+        <!-- Ret 1 -->
+            <div id="ret1">
+                <img src="img/budgetkasse/ret1.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Spicy ramen med svinekød</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Høj protein.png" alt="Proteinrig">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                        <img src="img/ikoner/Hurtig.png" alt="Hurtig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 2 -->
+            <div id="ret2">
+                <img src="img/budgetkasse/ret2.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Beef ramen suppe</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                        <img src="img/ikoner/Lav kalorie.png" alt="Kaloriefattig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 35 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 3 -->
+            <div id="ret3">
+                <img src="img/budgetkasse/ret3.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Ramen Totoro</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig">
+                        <img src="img/ikoner/Hurtig.png" alt="Hurtig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 20 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 4 -->
+            <div id="ret4">
+                <img src="img/budgetkasse/ret4.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Vegetariske gyoza</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Vegetar.png" alt="Vegetarisk">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 50 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 5 -->
+            <div id="ret5">
+                <img src="img/budgetkasse/ret5.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Krydret miso med forårsløg</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Høj protein.png" alt="Proteinrig">
+                        <img src="img/ikoner/Vegetar.png" alt="Vegetarisk">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                        <img src="img/ikoner/Hurtig.png" alt="Hurtig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 6 -->
+            <div id="ret6">
+                <img src="img/budgetkasse/ret6.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Teriyaki kylling</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                        <img src="img/ikoner/Hurtig.png" alt="Hurtig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 25 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 7 -->
+            <div id="ret7">
+                <img src="img/budgetkasse/ret7.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Tonokatsi med nudler</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Høj protein.png" alt="Proteinrig">
+                        <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 40 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 8 -->
+            <div id="ret8">
+                <img src="img/budgetkasse/ret8.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Spicy miso </h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Laktosefri.png" alt="Laktosefri">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 35 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        <!-- Ret 9 -->
+            <div id="ret9">
+                <img src="img/budgetkasse/ret9.jpg" alt="Produkt 2" class="img-ret">
+                <div class="ret-kort">
+                    <h3>Rice bowl med mayo</h3>
+                    <div class="ikon-filter">
+                        <img src="img/ikoner/Pescetar.png" alt="Pescetar">
+                        <img src="img/ikoner/Hurtig.png" alt="Hurtig">
+                    </div>
+                    <div class="tid-opskrift">
+                        <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="tilfojret">
+                    <button id="fjern"><i class="fa-solid fa-minus"></i></button>
+                    <p id="antalretter">0</p>
+                    <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 'Til bestilling' -->
+        <div class="bestilling-container">
+            <p class="bestilling-p">Har du valgt dine ønskede retter, kan du gå videre til bestilling. 
+                Vi glæder os til at sende dig din måltidskasse!</p>
+            <button class="knap-blaa">Gå til bestlling</button>
+        </div>
+    </main>
 
 <!-- Footer -->
 <footer id="footer-main">
@@ -167,12 +399,12 @@
       </section>
       <!-- Footer logo og icons -->
      <section class="footer-4">
-              <a href="index.html"><img class="logo2" src="img/nipponheaderlogo.png" alt="NipponLogo"></a>
+              <a href="index.html"><img class="logo2" src="img/nipponfooterlogo.png" alt="NipponLogo"></a>
               <br>
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-linkedin"></a>
               <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-brands fa-x-twitter"></a> <!-- erstatning af twitterlogo med X -->
     </section>
      </div>
   </footer>
