@@ -244,4 +244,5 @@ img {
     width: 100%;
     height: auto;
     margin-top: 0px; 
+    justify-content: center;
 }
