@@ -133,11 +133,20 @@ body {
 
 .kasse-container {
     display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .kasse {
-    display: 1;
+    display: flex;
     border: 2px solid black;
+    padding: 8rem;
+    background-color: #C7E9FC;
+    border-radius: 6%;
+    box-shadow: ;
+    
 }
 
 
