@@ -164,6 +164,7 @@ body {
 .baerikoner {
     display: block;
     justify-content:center;
+    position: absolute;
     margin-left: 1rem;
     margin-right: 1rem;
     width: 10%;
@@ -172,30 +173,34 @@ body {
 
 .kasse-container {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .kasse {
     display: flex;
+    position: relative;
     padding: 8rem;
     max-width: 500px;
     max-height: 500px;
     background-color: #C7E9FC;
     border-radius: 6%;
-    filter: drop-shadow(0.5px 0.5px 10px grey);
+    justify-content: space-between;
+    filter: drop-shadow(0.1px 0.1px 3px grey);
     overflow: hidden;
 }
 
 .kasse h4 {
-    font-family: dosis;
+    font-family: 'Dosis', sans-serif;
     font-weight: bold;
     font-size: x-large;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+
 
 
 
