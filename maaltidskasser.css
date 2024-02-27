@@ -127,6 +127,7 @@ body {
 .banner-maaltidskasser {
     position: relative;
     width: 100%;
+    margin-top: -12%;
 }
 
 .banner-maaltidskasser img {
@@ -154,6 +155,13 @@ body {
     font-size: 1.5rem;
     color: black;
     font-family: 'montserrat', sans-serif;
+}
+
+.motion-graphic {
+    position: absolute;
+    top: -55%;
+    right: -25%;
+    max-width: 50%; /* Adjust the width as needed */
 }
 
 /* SoMe sektion */
