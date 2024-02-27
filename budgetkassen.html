@@ -12,7 +12,7 @@
         <!-- CSS + JS + Fonts + icons -->
         <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" defer href="script.js">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- den her har adgang til alle ikoner (de frie) -->
@@ -136,39 +136,39 @@
     <div class="filter">
         <div class="knap">
             <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig ret" class="ikon-ret">
-            <button>Børnevenlig</button>
+            <button class="filter-knap" data-name="bornevenlig">Børnevenlig</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Vegetar.png" alt="Vegetar ret" class="ikon-ret">
-            <button>Vegetar</button>
+            <button class="filter-knap" data-name="vegetar">Vegetar</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Glutenfri.png" alt="Glutenfri ret" class="ikon-ret">
-            <button>Glutenfri</button>
+            <button class="filter-knap" data-name="glutenfri">Glutenfri</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Høj protein.png" alt="Proteinrig ret" class="ikon-ret">
-            <button>Høj protein</button>
+            <button class="filter-knap" data-name="proteinrig">Høj protein</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Laktosefri.png" alt="Laktosefri ret" class="ikon-ret">
-            <button>Laktosefri</button>
+            <button class="filter-knap" data-name="laktosefri">Laktosefri</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Veganer.png" alt="Vegansk ret" class="ikon-ret">
-            <button>Vegansk</button>
+            <button class="filter-knap" data-name="vegansk">Vegansk</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Pescetar.png" alt="Pescetar ret" class="ikon-ret">
-            <button>Pescetar</button>
+            <button class="filter-knap" data-name="pescetar">Pescetar</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Lav kalorie.png" alt="Kaloriefattig ret" class="ikon-ret">
-            <button>Kaloriefattig</button>
+            <button class="filter-knap" data-name="Kaloriefattig">Kaloriefattig</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Hurtig.png" alt="Hurtig ret" class="ikon-ret">
-            <button>Hurtig</button>
+            <button class="filter-knap" data-name="hurtig">Hurtig</button>
         </div>
     </div>
     <p class="retter-p">Vi opdaterer løbende med nye lækre opskrifter!</p>
@@ -176,7 +176,7 @@
     <!-- Oversigt over retter -->
         <div class="retter-grid">
         <!-- Ret 1 -->
-            <div id="ret1">
+            <div class="ret" id="ret1" data-name="proteinrig laktosefri hurtig">
                 <img src="img/budgetkasse/ret1.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -200,7 +200,7 @@
                 </div>
             </div>
         <!-- Ret 2 -->
-            <div id="ret2">
+            <div class="ret" id="ret2" data-name="laktosefri kaloriefattig">
                 <img src="img/budgetkasse/ret2.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -223,7 +223,7 @@
                 </div>
             </div>
         <!-- Ret 3 -->
-            <div id="ret3">
+            <div class="ret" id="ret3" data-name="bornevenlig hurtig">
                 <img src="img/budgetkasse/ret3.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -246,7 +246,7 @@
                 </div>
             </div>
         <!-- Ret 4 -->
-            <div id="ret4">
+            <div class="ret" id="ret4" data-name="vegetarisk laktosefri">
                 <img src="img/budgetkasse/ret4.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -269,7 +269,7 @@
                 </div>
             </div>
         <!-- Ret 5 -->
-            <div id="ret5">
+            <div class="ret" id="ret5" data-name="proteinrig vegetarisk laktosefri hurtig">
                 <img src="img/budgetkasse/ret5.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -294,7 +294,7 @@
                 </div>
             </div>
         <!-- Ret 6 -->
-            <div id="ret6">
+            <div class="ret" id="ret6" data-name="bornevenlig laktosefri hurtig">
                 <img src="img/budgetkasse/ret6.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -318,7 +318,7 @@
                 </div>
             </div>
         <!-- Ret 7 -->
-            <div id="ret7">
+            <div class="ret" id="ret7" data-name="proteinrig bornevenlig">
                 <img src="img/budgetkasse/ret7.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -341,7 +341,7 @@
                 </div>
             </div>
         <!-- Ret 8 -->
-            <div id="ret8">
+            <div class="ret" id="ret8" data-name="laktosefri">
                 <img src="img/budgetkasse/ret8.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -363,7 +363,7 @@
                 </div>
             </div>
         <!-- Ret 9 -->
-            <div id="ret9">
+            <div class="ret" id="ret9" data-name="pescetar hurtig">
                 <img src="img/budgetkasse/ret9.jpg" alt="Produkt 2" class="img-ret">
                 <button class="favorit">
                     <i class="fa-solid fa-heart"></i>
@@ -387,7 +387,6 @@
             </div>
         </div>
 
-
         <!-- 'Til bestilling' -->
         <div class="bestilling-container">
             <p class="bestilling-p">Har du valgt dine ønskede retter, kan du gå videre til bestilling. 
@@ -395,6 +394,7 @@
             <button class="knap-blaa">Gå til bestlling</button>
         </div>
     </main>
+
 
 <!-- Footer -->
 <footer id="footer-main">

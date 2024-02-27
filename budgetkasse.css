@@ -160,18 +160,23 @@ body {
 /* --- 'Gå til udvalg' */
 .knap-blaa {
     background-color: var(--clr-morkeblaa);
+    border: 3px solid var(--clr-morkeblaa);
     color: #fff;
     font-family: 'dosis', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    border: none;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     border-radius: 30px;
     cursor: pointer;
     display: block;
     text-align: center;
     margin: 3rem auto;
   }
+
+.knap-blaa:hover {
+    background-color: rgba(37, 110, 185, 0.15);
+    color: var(--clr-morkeblaa);
+}
 
 /* --- Knapper --- */
 .retter-h1 {
@@ -212,16 +217,27 @@ body {
 
 .knap button {
     background-color: var(--clr-morkroed);
+    border: solid 2px var(--clr-morkroed);
     color: #fff;
     font-family: 'dosis', sans-serif;
     font-size: 1.1rem;
-    border: none;
     height: 50px;
     padding: 0 2rem;
     border-radius: 30px;
     cursor: pointer;
     display: block;
     text-align: center;
+}
+
+.knap button:hover {
+    background-color: rgba(255, 97, 72, 0.15);
+    color: var(--clr-morkroed);
+}
+
+button.active {
+    background-color: rgba(255, 97, 72, 0.15);
+    border: solid 2px var(--clr-morkroed);
+    color: var(--clr-morkroed);
 }
 
 /* --- Måltidesoversigt --- */
