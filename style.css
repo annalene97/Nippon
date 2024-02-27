@@ -128,6 +128,10 @@ body {
 
 /* --- HEADER SLUT --- */
 
+.forsidebanner {
+    z-index: 0;
+}
+
   /* --- Footer GRID --- */
 
   #footer-main {
@@ -239,10 +243,184 @@ h4 {
     color: #C7E9FC;
   }
 
+/* --- Forside banner --- */
 img {
     display: block;
     width: 100%;
     height: auto;
     margin-top: 0px; 
     justify-content: center;
+}
+
+ /* --- Forside artikler --- */
+.forside_grid {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+    margin-top: 100px;
+   
+ }
+   
+ #item-0 { /* --- bæredygtighed artikel --- */
+    background-color: none;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    padding-right: 10px;
+    border-radius: 10px;
+ }
+
+ #item-0 img { /* --- bæredygtighed artikel img --- */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+ #item-1 { /* --- bæredygtighed artikel h1 og p --- */
+    background-color: none;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    margin-left: 20px;
+    
+ }
+ #item-2 { /* --- Budgetkasse artikel --- */
+    background-color: none;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    margin-left: 30px;
+    
+ }
+ #item-3 { /* --- budgetkasse artikel borders --- */
+    background-color: none;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    padding-left:10px;
+ }
+
+ #item-3 img { /* --- budgetkasse artikel img borders --- */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+
+.forside_overskrift {
+    font-size: 25px;
+}
+
+.forside_indledning {
+    text-align: center;
+    font-size: 17px;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+
+.bæredygtighed_overskrift {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.bæredygtighed_p {
+    margin-top: -50px;
+    font-size: 15px;
+    max-width: 70%;
+}
+
+.budget_overskrift {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: start;
+    margin-top: 15px;
+    text-align: start;
+}
+
+.budget_p {
+    margin-top: -50px;
+    font-size: 15px;
+    max-width: 80%;
+}
+
+/* --- levering infographic --- */
+ .infographic {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 100px;
+}
+ /* --- Bestil budgetkassen button --- */
+.custom-button {
+    display: block;
+    margin: 80px auto 0;
+    padding: 10px 10px;
+    width: 200px; 
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    background-color: #FF6148;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Dosis", sans-serif;
+}
+
+/* Button Hover effect */
+.custom-button:hover {
+    background-color: FF6148;
+    opacity: 50%;
+    color: #fff;
+}
+
+
+/* bestil button style */
+.bestil-button {
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    width: 150px; 
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    background-color: #256EB9;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Dosis", sans-serif;
+}
+
+/* bestil button Hover effect */
+.bestil-button:hover {
+    background-color: FF6148;
+    opacity: 50%;
+    background-color: #256EB9;
+}
+
+/* forside læs mere style */
+#læsmere {
+    color: #FF6148;
+    text-decoration: none;
+}
+
+#læsmere:hover {
+    color: #FF6148;
+    text-decoration: underline;
 }
