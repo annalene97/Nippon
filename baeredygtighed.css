@@ -14,6 +14,10 @@ html {
 }
 :root {
   --clr-background1: #FFF9F8;
+  --clr-lyseblaa: #C7E9FC;
+  --clr-morkeblaa: #246EB9;
+  --clr-lyseroed: #FFCDC2;
+  --clr-morkroed: #FD6947;
 }
 
 body {
@@ -159,7 +163,7 @@ body {
 }
 
 .groenartikel a:hover {
-    color: #FD6947;
+    color: var(--clr-morkroed);
     transition: 0.5s ease;
 }
 /* --- Grønne Måltidskasser SLUT --- */
@@ -193,7 +197,7 @@ body {
 
 .kasse {
     position: relative;
-    background-color: #C7E9FC;
+    background-color: var(--clr-lyseblaa);
     border-radius: 20px;
     width: 20rem;
     padding: 2rem;
@@ -212,7 +216,6 @@ body {
     padding-top: 6rem;
 }
 
-
 #overskriftoeko {
     font-family: 'Dosis', sans-serif;
     font-size: xxx-large;
@@ -226,9 +229,6 @@ body {
     justify-content: center;
     border-radius: 20px;
     position: absolute;
-    /*margin-left: 23.5rem;
-    margin-bottom: -3rem;
-    z-index: 5;*/
     z-index: 5;
 
 }
@@ -244,7 +244,6 @@ body {
     width: 100%;
     padding: 10rem 20rem;
 }
-
 
 
 /* --- Nippon & Økologi Section SLUT --- */
