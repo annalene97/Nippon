@@ -171,8 +171,8 @@ body {
 }
 
 
-.kasse-container {
-    display: flex;
+.kasse-container h4, .kasse-container p {
+    display: block;
     justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -195,9 +195,6 @@ body {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
     font-size: x-large;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .oekologi{
