@@ -250,13 +250,17 @@ button.active {
     justify-items: center;
 }
 
-#ret1, #ret2, #ret3, #ret4, #ret5, #ret6, #ret7, #ret8, #ret9 {
+.ret {
     border-radius: 20px;
     box-shadow: 0 10px 15px 0 rgb(0, 0, 0, 0.2);
     background-color: var(--clr-lyseblaa);
     margin-bottom: 1rem;
     max-width: 400px;
     position: relative;;
+}
+
+.ret.hidden { /* Til javascript: filtreringsknapper */
+    display: none;
 }
 
 .img-ret {
@@ -349,4 +353,12 @@ button.active {
     text-align: center;
     max-width: 700px;
     margin: 2rem auto 0;
+}
+
+
+
+
+/* --- Footer --- */
+.fa-caret-right {
+    color: var(--clr-morkroed);
 }

@@ -12,7 +12,7 @@
         <!-- CSS + JS + Fonts + icons -->
         <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" defer href="script.js">
+    
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- den her har adgang til alle ikoner (de frie) -->
@@ -21,6 +21,8 @@
         <link rel="icon" type="image/x-icon" href="/img/favicon (1).png">
         
         <link rel="stylesheet" href="budgetkasse.css">
+
+        <script defer src="script.js"></script>
     </head>
 <body>
     <header class="header_container">
@@ -86,7 +88,7 @@
                 <h1 class="budget-h1">Budgetkassen</h1>
             </div>
             <div class="bestil-container">
-                <div class="bestil-flex">
+                <div class="bestil-flex"> <!-- Valg af antal personer og måltider -->
                     <p class="p-vaelg">Vælg antal retter og personer, der skal spise med. </p>
                     <div class="vaelg-container">
                         <div class="vaelg-personer">
@@ -110,7 +112,7 @@
                     </div>
                     <p class="p-vaelg">Du kan altid ændre i din ordre senere.</p>
                 </div>
-                <div class="pris-container">
+                <div class="pris-container"> <!-- Pris på måltidskasse -->
                     <div class="pris-portion">
                         <h3>Pris pr. portion:</h3>
                         <p id="pris-portion">39,00 kr.</p>
@@ -124,7 +126,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Japansk mønster - baggrund -->
         <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster" class="budget-moenster">
 
         <button class="knap-blaa">Vælg retter</button>
@@ -135,12 +137,15 @@
     <p class="retter-p">Vælg de retter, du ønsker i din måltidskasse. Brug filtrene til nemmere at finde de bedste måltider for dig.</p>
     <div class="filter">
         <div class="knap">
+            <button class="filter-knap active" data-name="alle">Alle retter</button>
+        </div>
+        <div class="knap">
             <img src="img/ikoner/Børnevenlig.png" alt="Børnevenlig ret" class="ikon-ret">
             <button class="filter-knap" data-name="bornevenlig">Børnevenlig</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Vegetar.png" alt="Vegetar ret" class="ikon-ret">
-            <button class="filter-knap" data-name="vegetar">Vegetar</button>
+            <button class="filter-knap" data-name="vegetarisk">Vegetar</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Glutenfri.png" alt="Glutenfri ret" class="ikon-ret">
@@ -164,7 +169,7 @@
         </div>
         <div class="knap">
             <img src="img/ikoner/Lav kalorie.png" alt="Kaloriefattig ret" class="ikon-ret">
-            <button class="filter-knap" data-name="Kaloriefattig">Kaloriefattig</button>
+            <button class="filter-knap" data-name="kaloriefattig">Kaloriefattig</button>
         </div>
         <div class="knap">
             <img src="img/ikoner/Hurtig.png" alt="Hurtig ret" class="ikon-ret">
@@ -176,107 +181,107 @@
     <!-- Oversigt over retter -->
         <div class="retter-grid">
         <!-- Ret 1 -->
-            <div class="ret" id="ret1" data-name="proteinrig laktosefri hurtig">
-                <img src="img/budgetkasse/ret1.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="proteinrig,laktosefri,huritg">
+                <img src="img/budgetkasse/ret1.jpg" alt="Spicy ramen med svinekød" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Spicy ramen med svinekød</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Høj protein (hvid).png" alt="Proteinrig">
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
                         <img src="img/ikoner m. hvid baggrund/Hurtig (hvid).png" alt="Hurtig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 2 -->
-            <div class="ret" id="ret2" data-name="laktosefri kaloriefattig">
-                <img src="img/budgetkasse/ret2.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
-                    <i class="fa-solid fa-heart"></i>
+            <div class="ret" data-name="laktosefri,kaloriefattig">
+                <img src="img/budgetkasse/ret2.jpg" alt="Beef ramen suppe" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
+                    <i class="fa-solid fa-heart"></i> 
                 </button>
                 <div class="ret-kort">
                     <h3>Beef ramen suppe</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
                         <img src="img/ikoner m. hvid baggrund/Kalorievenlig (hvid).png" alt="Kaloriefattig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 35 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 3 -->
-            <div class="ret" id="ret3" data-name="bornevenlig hurtig">
-                <img src="img/budgetkasse/ret3.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="bornevenlig,hurtig">
+                <img src="img/budgetkasse/ret3.jpg" alt="Ramen Totoro" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Ramen Totoro</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Børnevenlig (hvid).png" alt="Børnevenlig">
                         <img src="img/ikoner m. hvid baggrund/Hurtig (hvid).png" alt="Hurtig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 20 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 4 -->
-            <div class="ret" id="ret4" data-name="vegetarisk laktosefri">
-                <img src="img/budgetkasse/ret4.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="vegetarisk,laktosefri">
+                <img src="img/budgetkasse/ret4.jpg" alt="Vegetariske gyoza" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Vegetariske gyoza</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Vegetar (hvid).png" alt="Vegetarisk">
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 50 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 5 -->
-            <div class="ret" id="ret5" data-name="proteinrig vegetarisk laktosefri hurtig">
-                <img src="img/budgetkasse/ret5.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="proteinrig,vegetarisk,laktosefri,hurtig">
+                <img src="img/budgetkasse/ret5.jpg" alt="Krydret miso med forårsløg" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Krydret miso med forårsløg</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Høj protein (hvid).png" alt="Proteinrig">
                         <img src="img/ikoner m. hvid baggrund/Vegetar (hvid).png" alt="Vegetarisk">
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
@@ -284,102 +289,102 @@
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 6 -->
-            <div class="ret" id="ret6" data-name="bornevenlig laktosefri hurtig">
-                <img src="img/budgetkasse/ret6.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="bornevenlig,laktosefri,hurtig">
+                <img src="img/budgetkasse/ret6.jpg" alt="Teriyaki kylling" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Teriyaki kylling</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Børnevenlig (hvid).png" alt="Børnevenlig">
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
                         <img src="img/ikoner m. hvid baggrund/Hurtig (hvid).png" alt="Hurtig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 25 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 7 -->
-            <div class="ret" id="ret7" data-name="proteinrig bornevenlig">
-                <img src="img/budgetkasse/ret7.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="proteinrig,bornevenlig">
+                <img src="img/budgetkasse/ret7.jpg" alt="Tonokatsi med nudler" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Tonokatsi med nudler</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Høj protein (hvid).png" alt="Proteinrig">
                         <img src="img/ikoner m. hvid baggrund/Børnevenlig (hvid).png" alt="Børnevenlig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 40 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 8 -->
-            <div class="ret" id="ret8" data-name="laktosefri">
-                <img src="img/budgetkasse/ret8.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="laktosefri">
+                <img src="img/budgetkasse/ret8.jpg" alt="Spicy miso" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
-                    <h3>Spicy miso </h3>
-                    <div class="ikon-filter">
+                    <h3>Spicy miso</h3>
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Laktosefri (hvid).png" alt="Laktosefri">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 35 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
         <!-- Ret 9 -->
-            <div class="ret" id="ret9" data-name="pescetar hurtig">
-                <img src="img/budgetkasse/ret9.jpg" alt="Produkt 2" class="img-ret">
-                <button class="favorit">
+            <div class="ret" data-name="pescetar,hurtig">
+                <img src="img/budgetkasse/ret9.jpg" alt="Rice bowl med mayo" class="img-ret">
+                <button class="favorit"> <!-- Hjerteikon -->
                     <i class="fa-solid fa-heart"></i>
                 </button>
                 <div class="ret-kort">
                     <h3>Rice bowl med mayo</h3>
-                    <div class="ikon-filter">
+                    <div class="ikon-filter"> <!-- Filtre -->
                         <img src="img/ikoner m. hvid baggrund/Pescetar (hvid).png" alt="Pescetar">
                         <img src="img/ikoner m. hvid baggrund/Hurtig (hvid).png" alt="Hurtig">
                     </div>
                     <div class="tid-opskrift">
                         <p class="tid"><i class="fa-regular fa-clock"></i> 30 min</p>
-                        <i class="fa-solid fa-receipt"></i>
+                        <i class="fa-solid fa-receipt"></i> <!-- Opskrift -->
                     </div>
                 </div>
-                <div class="tilfojret">
+                <div class="tilfojret"> <!-- Tlføjelse af ret -->
                     <button id="fjern"><i class="fa-solid fa-minus"></i></button>
                     <p id="antalretter">0</p>
                     <button id="tilfoj"><i class="fa-solid fa-plus"></i></button>
@@ -402,11 +407,11 @@
       <section class="footer-1">
             <h4>Find rundt på siden</h4>
             <br>
-            <p><a href="#">Se udvalget af måltidskasser</a></p>
-            <p><a href="#">Din profil</a></p>
-            <p><a href="#">Hvad er det japanske køkken?</a></p>
-            <p><a href="#">Læs om vores bæredygtige profil</a></p>
-            <p><a href="#">FAQ</a></p>
+            <p><a href="#"><i class="fa-solid fa-caret-right"></i> Se udvalget af måltidskasser</a></p>
+            <p><a href="#"><i class="fa-solid fa-caret-right"></i> Din profil</a></p>
+            <p><a href="#"><i class="fa-solid fa-caret-right"></i> Hvad er det japanske køkken?</a></p>
+            <p><a href="#"><i class="fa-solid fa-caret-right"></i> Læs om vores bæredygtige profil</a></p>
+            <p><a href="#"><i class="fa-solid fa-caret-right"></i> FAQ</a></p>
           </section>
           <section class="footer-2">
                <h4>Kundeservice</h4>
