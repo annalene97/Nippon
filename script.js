@@ -1,3 +1,32 @@
+// Bestil animation
+document.addEventListener("DOMContentLoaded", function() {
+    const buttonElement = document.getElementById("spell-button");
+    const buttonText = buttonElement.innerText;
+
+    function spellButtonText() {
+        let index = 0;
+
+        function animateText() {
+            buttonElement.innerText = buttonText.substring(0, index);
+
+            index++;
+
+            if (index <= buttonText.length) {
+                setTimeout(animateText, 300);
+            } else {
+                
+                index = 0;
+                setTimeout(animateText, 1000); 
+            }
+        }
+
+        // Starter spelling efter delay på 1000ms
+        setTimeout(animateText, 1000);
+    }
+
+    spellButtonText(); // Starter spelling animation
+});
+
 // VALG AF MÅLTIDSKASSE 
 
 
