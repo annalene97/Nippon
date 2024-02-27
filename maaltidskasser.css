@@ -119,3 +119,77 @@ body {
 .vaelg-button:hover {
     background-color: rgba(253, 105, 71, 0.8); 
 }
+
+/*--- Banner billede ---*/
+
+.banner-maaltidskasser {
+    position: relative;
+    width: 100%;
+}
+
+.banner-maaltidskasser img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.boks-maaltidskasser {
+    position: absolute;
+    top: -10%; 
+    left: 50%;
+    transform: translateX(-90%);
+    background-color: #FFF9F8;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%; 
+    border: 7px solid #256EB9;
+}
+
+.boks-maaltidskasser p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* SoMe sektion */
+
+.SoMe-titel {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.So-Me-titel h1 {
+    font-size: 2rem;
+    color: #256EB9;
+    font-family: 'dosis', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    height: 150px; 
+    font-size: 7rem; 
+    margin: 20px 130px 80px; 
+    text-decoration: none;
+    color: #FFF9F8;
+    background-color: #ff6347;
+}
+
+.social-icons a:hover {
+    color: #ff6347; /* Change icon color on hover if needed */
+    background-color: #FFF9F8; /* Change the background color on hover if needed */
+}
+
+
