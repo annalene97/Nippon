@@ -29,20 +29,93 @@ body {
 
 .maaltidskasser-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 20vh;
-    margin-top: 2rem; 
+    height: 80vh;
+    margin-top: 2rem;
 }
 
 .maaltidskasser-h1 {
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
     margin: 0;
+    margin-top: 7rem;
     font-size: 2.5rem;
 }
 
-.maaltidskasser-titel {
-    text-align: center; 
-    width: 100%; 
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem; 
+}
+
+.image-box {
+    position: relative;
+    width: 30%;
+    max-width: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    right: 0;
+    bottom: -40px; 
+    background-color: #C7E9FC;
+    pointer-events: none;
+    z-index: -1; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-title {
+    text-align: center;
+    margin-top: 2px; 
+    margin-bottom: 10px;
+    font-size: 2rem; 
+    color: black; 
+    font-family: 'dosis', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.info-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FFF9F8; 
+    color: black;
+    border-color: #FD6947;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'dosis', sans-serif;
+}
+
+.vaelg-button {
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    background-color: #FD6947;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'dosis', sans-serif;
+}
+
+/* --- Hover for måltidskasse knapper ---- */
+
+.info-button:hover {
+    background-color: rgba(255, 249, 248, 0.8); 
+}
+
+.vaelg-button:hover {
+    background-color: rgba(253, 105, 71, 0.8); 
 }
