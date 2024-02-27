@@ -165,14 +165,26 @@ body {
 
 /* --- De Blå Kasser START --- */
 
-.baerikoner-grid {
+/*.baerikoner-grid {
     display: grid;
-    grid-template-columns: 50% 50% 50%;
+    grid-template-columns: 30% 20% 30% 20% 30%;
     column-gap: 10rem;
     justify-content:space-between;
+    align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    width: 10%;
+    width: 20%;
+}*/
+
+.itemgrid {
+    display: grid;
+    justify-items: center;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .kasse-container-grid {
@@ -195,6 +207,7 @@ body {
     padding:2rem;
     box-shadow: 0 0 9px 1px rgba(0,0,0,0.3)
 }
+
 
 
 /* --- De Blå Kasser SLUT --- */
