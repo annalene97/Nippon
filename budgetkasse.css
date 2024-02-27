@@ -240,12 +240,27 @@ body {
     background-color: var(--clr-lyseblaa);
     margin-bottom: 1rem;
     max-width: 400px;
+    position: relative;;
 }
 
 .img-ret {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.2);
+}
+
+.favorit {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fa-heart {
+    font-size: 2rem;
+    color: var(--clr-lyseroed);
 }
 
 .ret-kort {
