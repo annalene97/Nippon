@@ -131,6 +131,35 @@ body {
 
 /* --- MAIN START --- */
 
+.groenne {
+    display: flex;
+    padding: 0;
+}
+
+.groenne img {
+    width: 50%;
+    margin-top: 5rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.groenartikel {
+    padding: 0px 70px;
+}
+
+.groenartikel h1 {
+    font-family: dosis;
+    font-size: xxx-large;
+}
+
+.groenartikel a {
+    font-weight: bold;
+}
+
+.groenartikel a:hover {
+    color: #FD6947;
+    transition: 0.5s ease;
+}
+
 
 .baerikoner {
     display: block;
