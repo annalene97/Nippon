@@ -809,3 +809,36 @@ img {
     max-width: 700px;
     margin: 2rem auto 0;
 }
+
+/* -----------------------
+-------- Fejlside -------- 
+----------------------- */
+.fejl-h1 {
+    font-family: 'dosis', sans-serif;
+    font-size: 3rem;
+    margin: 8rem 0 3rem;
+}
+
+.fejl-p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.knap-fejl {
+    margin-top: 2rem;
+}
+
+.fejl-moenster {
+    max-height: 3rem;
+    overflow: hidden;
+}
+
+#footer-fejl {
+    position: fixed;
+    bottom: 0;
+    background-color: #C7E9FC;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat';
+}

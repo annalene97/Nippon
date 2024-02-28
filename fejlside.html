@@ -18,7 +18,7 @@
     <!-- description -->
     <meta name="description" content="Bestil din næste måltidskasse til billig pris. Se vores udvalg af japanske retter.">
     <!-- CSS + JS + Fonts + icons -->
-    <link rel="icon" type="image/x-icon" href="/img/favicon (1).png" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -30,6 +30,107 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <header class="header_container">
+        <nav>
+            <div class="head1">
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <a class="dropbtn" href="maaltidskasser.html">Måltidskasser</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="budgetkassen.html">Budgetkassen</a>
+                            <a href="#">Standardkassen</a>
+                            <a href="#">Gourmetkassen</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="topnav" id="myTopnav">
+                  <div class="dropdown">
+                      <a class="dropbtn" href="#">Det japanske køkken</a>
+                      <i class="fa fa-caret-down"></i>
+                      <div class="dropdown-content">
+                        <a href="#">bla</a>
+                        <a href="#">bla</a>
+                        <a href="#">bla</a>
+                      </div> 
+                  </div>
+              </div>
+            </div>
+            <div class="headerlogo">
+                <a href="index.html"><img class="logo" src="img/nipponheaderlogo.png" alt="NipponLogo"></a>
+            </div>
+            <div class="head2">
+              <div class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <a class="dropbtn" href="baeredygtighed.html">Bæredygtighed</a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">bla</a>
+                        <a href="#">bla</a>
+                        <a href="#">bla</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="topnav" id="myTopnav">
+              <div class="dropdown">
+                  <a class="dropbtn" href="#">Kontakt</a>
+                  <i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
+                      <a href="#">Kundesupport</a>
+                      <a href="#">FAQ</a>
+                  </div> 
+              </div>
+          </div>
+        </nav>
+    </header>
+
+
+    <h1 class="fejl-h1">Hov! Vi beklager!</h1>
+    <p class="fejl-p">Nudlerne er desværre ikke kogt færdig. <br> Kom gerne igen senere!</p>
+    <button class="knap-blaa knap-fejl" onclick="window.location.href = 'index.html';">Gå til forsiden</button>
+
+
+    <!-- Footer -->
+    <footer id="footer-fejl"> <!-- nyt ID -->
+        <div class="fejl-moenster">
+            <img src="/img/budgetkasse/pattern.png" alt="Japansk mønster">
+        </div>
+        <div class="footer-grid">
+        <section class="footer-1">
+                <h4>Find rundt på siden</h4>
+                <br>
+                <p><a href="#"><i class="fa-solid fa-caret-right"></i> Se udvalget af måltidskasser</a></p>
+                <p><a href="#"><i class="fa-solid fa-caret-right"></i> Din profil</a></p>
+                <p><a href="#"><i class="fa-solid fa-caret-right"></i> Hvad er det japanske køkken?</a></p>
+                <p><a href="#"><i class="fa-solid fa-caret-right"></i> Læs om vores bæredygtige profil</a></p>
+                <p><a href="#"><i class="fa-solid fa-caret-right"></i> FAQ</a></p>
+            </section>
+            <section class="footer-2">
+                <h4>Kundeservice</h4>
+                <br>
+                <p><a href="#">Kundeservice@nippon.dk</a></p>
+                <p><a href="#">Tlf. 12 345 678</a></p>
+                <p><a href="#">Man-torsdag: 9-12 & 13-16</a></p>
+                <p><a href="#">Fredag: 9-12 & 13-14</a></p>
+            </section>
+            <section class="footer-3">
+            <h4>Adresse</h4>
+            <br>
+            <p><a href="#">Nippon A/S</a></p>
+            <p><a href="#">Graven 24</a></p>
+            <p><a href="#">Aarhus c 8000</a></p>
+            <p><a href="#">CVR: 8765432</a></p>
+        </section>
+        <!-- Footer logo og icons -->
+        <section class="footer-4">
+                <a href="index.html"><img class="logo2" src="img/nipponfooterlogo.png" alt="NipponLogo"></a>
+                <br>
+                <a href="#" class="fa fa-brands fa-facebook"></a>
+                <a href="#" class="fa fa-brands fa-linkedin"></a>
+                <a href="#" class="fa fa-brands fa-instagram"></a>
+                <a href="#" class="fa fa-brands fa-x-twitter"></a>
+        </section>
+        </div>
+    </footer>
 </body>
 </html>
