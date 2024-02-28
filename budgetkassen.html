@@ -27,7 +27,7 @@
 <!--         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <!-- Favikon -->
         
-        <link rel="stylesheet" href="budgetkasse.css">
+        <!-- <link rel="stylesheet" href="budgetkasse.css"> -->
 
         <script defer src="script.js"></script>
     </head>
@@ -138,11 +138,12 @@
             <img src="/img/budgetkasse/pattern.png" alt="Japansk bølgemønster" class="budget-moenster">
         </div>
 
-        <button class="knap-blaa">Vælg retter</button>
+        <button class="knap-blaa" onclick = "window.location.href='#retter';">Vælg retter</button>
 
 
     <!-- Filtreringsknapper -->
-    <h1 class="retter-h1">Vores udvalg af retter</h1>
+    <section id="retter">
+        <h1 class="retter-h1">Vores udvalg af retter</h1>
     <p class="retter-p">Vælg de retter, du ønsker i din måltidskasse. Brug filtrene til nemmere at finde de bedste måltider for dig.</p>
     <div class="filter">
         <div class="knap">
@@ -186,6 +187,8 @@
         </div>
     </div>
     <p class="retter-p">Vi opdaterer løbende med nye lækre opskrifter!</p>
+    </section>
+    
 
     <!-- Oversigt over retter -->
         <div class="retter-grid">
