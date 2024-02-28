@@ -211,7 +211,7 @@ section
 .footer-2 
 .footer-3 
  {
-    background-color: none;
+    background-color: transparent;
     font-family: 'Montserrat';
 }
 
@@ -297,7 +297,7 @@ img {
  }
    
  #item-0 { /* --- bæredygtighed artikel --- */
-    background-color: none;
+    background-color: transparent;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 2;
@@ -312,7 +312,7 @@ img {
  }
 
  #item-1 { /* --- bæredygtighed artikel h1 og p --- */
-    background-color: none;
+    background-color: transparent;
     grid-row-start: 1;
     grid-column-start: 2;
     grid-row-end: 2;
@@ -321,7 +321,7 @@ img {
     
  }
  #item-2 { /* --- Budgetkasse artikel --- */
-    background-color: none;
+    background-color: transparent;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: 3;
@@ -330,7 +330,7 @@ img {
     
  }
  #item-3 { /* --- budgetkasse artikel borders --- */
-    background-color: none;
+    background-color: transparent;
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 3;
@@ -413,7 +413,7 @@ img {
 
 /* Button Hover effect */
 .custom-button:hover {
-    background-color: FF6148;
+    background-color: #FF6148;
     opacity: 50%;
     color: #fff;
 }
@@ -444,7 +444,6 @@ img {
 
 /* bestil button Hover effect */
 .bestil-button:hover {
-    background-color: FF6148;
     opacity: 50%;
     background-color: #256EB9;
 }
