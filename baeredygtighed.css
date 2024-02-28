@@ -53,6 +53,7 @@ body {
 
     .logo { /* Header logo */
         position: absolute;
+        padding-top: 10px;
         max-width: 10%;
         margin-top: 30px;
         transform: translate(-50%, -50%);
