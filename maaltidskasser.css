@@ -127,7 +127,8 @@ body {
 .banner-maaltidskasser-container {
     position: relative;
     width: 100%;
-    margin-top: 35vh;
+    margin-top: 50vh;
+    padding-top: 10vh;
 }
 
 .banner-maaltidskasser {
@@ -147,11 +148,11 @@ body {
     left: 30%; 
     transform: translate(-50%, -50%);
     background-color: #FFF9F8;
-    padding: 3vw;
+    padding: 2vw;
     border-radius: 15px;
     text-align: center;
     border: 7px solid #256EB9;
-    max-width: 80vw;
+    max-width: 60vw;
     width: 600px;
 }
 
