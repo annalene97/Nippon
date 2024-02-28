@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // VALG AF MÅLTIDSKASSE 
-// Selecting elements
 const cirklerPersoner = document.querySelectorAll('.vaelg-personer .cirkel');
 const cirklerRetter = document.querySelectorAll('.vaelg-retter .cirkel');
 const prisPortion = document.getElementById('pris-portion');
