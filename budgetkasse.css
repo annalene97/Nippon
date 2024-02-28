@@ -25,6 +25,42 @@ body {
   background-color: var(--clr-background1);
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Footer icons */
+
+/*.fa {
+    font-size: 1rem;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  
+  .fa-brands {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+    background: rgb(0, 0, 0);
+    color: #C7E9FC;
+  }
+  .fa-brands::before {
+    line-height: 1.25em;
+  }
+
+  .fa-caret-right {
+    color: var(--clr-morkroed);
+} */
+
 /* --- BUDGETKASSEN --- */
 
 .budget-titel {

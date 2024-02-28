@@ -21,6 +21,12 @@ body {
   background-color: var(--clr-background1);
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* --- HEADER --- */
 
 .head1, .head2  {
@@ -86,6 +92,10 @@ body {
         background-color: inherit;
         font-family: inherit;
         margin: auto;
+    }
+
+    .fa-caret-down {
+        padding: 5px 10px;
     }
 
     .dropdown-content {
@@ -228,13 +238,7 @@ h4 {
 /* Footer icons */
 
 .fa {
-    padding: 5px;
-    font-size: 50px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 100%;
+    font-size: 1rem;
   }
   
   .fa:hover {
@@ -242,32 +246,24 @@ h4 {
     text-decoration: none;
   }
   
- 
-  .fa-facebook {
+  .fa-brands {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
     background: rgb(0, 0, 0);
     color: #C7E9FC;
   }
-  
-  .fa-linkedin {
-    background: rgb(0, 0, 0);
-    color: #C7E9FC;
-  }
-  
- 
-  .fa-twitter {
-    background: rgb(0, 0, 0);
-    color: #C7E9FC;
-  }
-  
-  .fa-instagram {
-    background: rgb(0, 0, 0);
-    color: #C7E9FC;
+  .fa-brands::before {
+    line-height: 1.25em;
   }
 
-  .fa-x-twitter { /* --- erstatning af twitter logo med X --- */
-    background: rgb(0, 0, 0);
-    color: #C7E9FC;
-  }
+  .fa-caret-right {
+    color: var(--clr-morkroed);
+}
 
 /* --- Forside banner --- */
 img {
