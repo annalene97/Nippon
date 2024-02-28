@@ -734,6 +734,10 @@ img {
     color: var(--clr-lyseroed);
 }
 
+.favorit i.fa-heart.favorited { /* Til javascript: add to favorites */
+    color: #FD6947;
+}
+
 .ret-kort {
     padding: 1.2rem 2rem;
 }
