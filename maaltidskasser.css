@@ -100,11 +100,11 @@ body {
 }
 
 .vaelg-button {
-    padding: 5px 50px;
+    padding: 10px 50px;
     font-size: 1.2rem;
     background-color: #FD6947;
     color: white;
-    border: none;
+    border: 2px solid #FD6947;
     border-radius: 25px;
     cursor: pointer;
     font-family: 'dosis', sans-serif;
