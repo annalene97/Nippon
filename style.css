@@ -815,6 +815,128 @@ img {
     margin: 2rem auto 0;
 }
 
+
+/* -----------------------
+------ Bæredygtighed ----- 
+------------------------*/
+/* --- Grønne Måltidskasser START --- */
+
+.groenne {
+    display: flex;
+    padding: 0 0 10rem;
+}
+
+.groenne img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 5rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.groenartikel {
+    padding: 0px 70px;
+}
+
+.groenartikel h1 {
+    font-family: dosis;
+    font-size: xxx-large;
+}
+
+.groenartikel a {
+    font-weight: bold;
+}
+
+.groenartikel a:hover {
+    color: var(--clr-morkroed);
+    transition: 0.5s ease;
+}
+/* --- Grønne Måltidskasser SLUT --- */
+
+/* --- De Blå Kasser START --- */
+
+
+.kasse-container-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.kasse-container-grid h4 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 10px;
+   
+}
+
+
+.kasse img {
+    display: block;
+    width: 30%;
+    position: absolute;
+    margin-top: -6.5rem;
+    margin-left: 5rem;
+}
+
+
+.kasse {
+    position: relative;
+    background-color: var(--clr-lyseblaa);
+    border-radius: 20px;
+    width: 20rem;
+    padding: 2rem;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.3);
+}
+
+
+/* --- De Blå Kasser SLUT --- */
+
+/* --- Nippon & Økologi Section START --- */
+
+.oekologi{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+#overskriftoeko {
+    font-family: 'Dosis', sans-serif;
+    font-size: xxx-large;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+#oeko{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+
+}
+
+#moenster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 4.5rem;
+}
+
+.artikel {
+    width: 100%;
+    padding: 10rem 20rem;
+}
+
+
+/* --- Nippon & Økologi Section SLUT --- */
+
+/*--- MAIN SLUT ---*/
+
+
+
+
 /* -----------------------
 -------- Fejlside -------- 
 ----------------------- */
