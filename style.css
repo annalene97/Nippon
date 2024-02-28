@@ -14,6 +14,10 @@ html {
 }
 :root {
   --clr-background1: #FFF9F8;
+  --clr-lyseblaa: #C7E9FC;
+  --clr-morkeblaa: #246EB9;
+  --clr-lyseroed: #FFCDC2;
+  --clr-morkroed: #FD6947;
 }
 
 body {
@@ -46,95 +50,95 @@ img {
     z-index: 9999;
 }
 
-    nav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 1rem 0 0 0;
-    }
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
 
-    .logo { /* Header logo */
-        position: absolute;
-        max-width: 10%;
-        margin-top: 30px;
-        transform: translate(-50%, -50%);
-    } 
+.logo { /* Header logo */
+    position: absolute;
+    max-width: 10%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+} 
 
-    .head1, /* De 4 menupunkter */
-    .head2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+.head1, /* De 4 menupunkter */
+.head2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-    .topnav {
-        overflow: hidden;
-        font-family: 'Dosis';
-       
-    }
+.topnav {
+    overflow: hidden;
+    font-family: 'Dosis';
+    
+}
 
-    .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        text-decoration: none;
-        font-family: 'Dosis';
-        font-size: 20px;
-    }
-    .dropdown .dropbtn {
-        font-size: 23px;
-        font-weight: 600;
-        border: none;
-        outline: none;
-        color: var(--clr-text-black);
-        background-color: inherit;
-        font-family: inherit;
-        margin: auto;
-    }
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Dosis';
+    font-size: 20px;
+}
+.dropdown .dropbtn {
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: var(--clr-text-black);
+    background-color: inherit;
+    font-family: inherit;
+    margin: auto;
+}
 
-    .fa-caret-down {
-        padding: 5px 10px;
-    }
+.fa-caret-down {
+    padding: 5px 10px;
+}
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: var(--clr-background1);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        margin-top: 0.02rem;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--clr-background1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0.02rem;
+}
 
-    .dropdown-content a {
-        float: none;
-        color: var(--clr-white);
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        font-weight: 200;
-    }
+.dropdown-content a {
+    float: none;
+    color: var(--clr-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 200;
+}
 
-    .dropdown-content p {
-        padding: 5px;
-        font-weight: 600;
-    }
+.dropdown-content p {
+    padding: 5px;
+    font-weight: 600;
+}
 
-    .topnav a:hover, .dropdown:hover .dropbtn {
-        background-color: rgba(153, 152, 148, 0);
-        color: var(--clr-text-black);
-    }
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(153, 152, 148, 0);
+    color: var(--clr-text-black);
+}
 
-    .dropdown-content a:hover {
-        color: rgba(0, 0, 0, 0.4);
-    }
+.dropdown-content a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* --- HEADER SLUT --- */
 
@@ -451,4 +455,351 @@ img {
 #læsmere:hover {
     color: #FF6148;
     text-decoration: underline;
+}
+
+
+
+/* -----------------------
+-------BUDGETKASSEN-------
+-------------------------- */
+
+.budget-titel {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.ikon-budgetkasse {
+    height: 4.5rem;
+    width: auto;
+    margin-top: 0;
+}
+
+.budget-h1 {
+    font-family: 'dosis', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.budget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 50rem;
+    margin: 0 auto 5rem;
+}
+
+.bestil-container {
+    width: 100%;
+    border: solid 4px var(--clr-morkeblaa);
+    border-radius: 25px;
+    z-index: 200;
+    background-color: white;
+    box-shadow: 0 10px 15px 0 rgb(0, 0, 0, 0.2);
+}
+
+.bestil-flex {
+    padding: 2.5rem 3rem 1.5rem;
+}
+
+.p-vaelg {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.vaelg-container {
+    padding: 0 2.5rem;
+    margin: 2rem 2rem 3rem;
+}
+
+.personer-h2, .retter-h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.vaelg-personer, .vaelg-retter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cirkel {
+    border: solid 3px var(--clr-morkroed);
+    border-radius: 50px;
+    padding: 10px;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    text-align: center;
+    color: var(--clr-morkroed);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0 0.2rem;
+}
+
+.cirkel:hover {
+    background-color: var(--clr-lyseroed);
+    cursor: pointer;
+}
+
+.selected { /* Den cirkel der er valgt fra start, når burgeren åbner siden */
+    background-color: var(--clr-lyseroed);
+}
+
+.pris-container {
+    padding: 2rem 10rem;
+    background-color: var(--clr-lyseblaa);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.pris-portion, .pris-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 2rem;
+}
+
+.pris-portion h3, .pris-portion p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.pris-alt h3, .pris-alt p{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.levering-p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.fa-circle-check {
+    font-size: 1rem;
+    color: black;
+}
+
+/* --- Japansk mønster - what to do?? --- */
+.moenster-container {
+    z-index: -100;
+    position: absolute;
+    margin-top: -30rem;
+    width: 100%;
+    max-height: 20rem;
+    overflow: hidden;
+}
+.budget-moenster {
+    width: 100%;
+    height: auto;
+}
+
+/* --- 'Gå til udvalg' */
+.knap-blaa {
+    background-color: var(--clr-morkeblaa);
+    border: 3px solid var(--clr-morkeblaa);
+    color: #fff;
+    font-family: 'dosis', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 3rem auto;
+  }
+
+.knap-blaa:hover {
+    background-color: rgba(37, 110, 185, 0.15);
+    color: var(--clr-morkeblaa);
+}
+
+/* --- Knapper --- */
+.retter-h1 {
+    font-family: 'dosis', sans-serif;
+    font-weight: 700;
+    margin: 5rem 0 2rem;
+    font-size: 2.5rem;
+}
+
+.retter-p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+
+.knap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ikon-ret {
+    width: 50px;
+    height: auto;
+    margin: 0;
+}
+
+.knap button {
+    background-color: var(--clr-morkroed);
+    border: solid 2px var(--clr-morkroed);
+    color: #fff;
+    font-family: 'dosis', sans-serif;
+    font-size: 1.1rem;
+    height: 50px;
+    padding: 0 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.knap button:hover {
+    background-color: rgba(255, 97, 72, 0.15);
+    color: var(--clr-morkroed);
+}
+
+.knap button.active { /* Til javascrip: aktivering af filtrering */
+    background-color: rgba(255, 97, 72, 0.15);
+    border: solid 2px var(--clr-morkroed);
+    color: var(--clr-morkroed);
+}
+
+/* --- Måltidesoversigt --- */
+
+#retter {
+    padding-top: 5rem;
+}
+
+.retter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 10rem;
+    justify-items: center;
+}
+
+.ret {
+    border-radius: 20px;
+    box-shadow: 0 10px 15px 0 rgb(0, 0, 0, 0.2);
+    background-color: var(--clr-lyseblaa);
+    margin-bottom: 1rem;
+    max-width: 400px;
+    position: relative;;
+}
+
+.ret.hidden { /* Til javascript: filtreringsknapper */
+    display: none;
+}
+
+.img-ret {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.2);
+}
+
+.favorit {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fa-heart {
+    font-size: 2rem;
+    color: var(--clr-lyseroed);
+}
+
+.ret-kort {
+    padding: 1.2rem 2rem;
+}
+
+.ret-kort h3 {
+    font-size: 1.3rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+
+.ikon-filter img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.tid-opskrift {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: -10px;
+}
+
+.tid-opskrift i {
+    font-size: 1.3rem;
+}
+
+.tid i {
+    padding-right: 0.2rem;
+}
+
+.tilfojret {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--clr-morkeblaa);
+    background-color: white;
+    border-radius: 30px;
+    width: 6rem;
+    padding: 0.5rem 4rem;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    font-size: 1.5rem;
+}
+
+.tilfojret button {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fa-receipt {
+    cursor: pointer;
+}
+
+/* --- 'Gå til bestilling' --- */
+.bestilling-container {
+    margin-bottom: 6rem;
+}
+.bestilling-p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 700px;
+    margin: 2rem auto 0;
 }

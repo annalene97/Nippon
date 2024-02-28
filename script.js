@@ -137,3 +137,4 @@ document.querySelectorAll('.tilfojret').forEach(item => {
 
 
 // TILFØJ TIL FAVORIT
+
