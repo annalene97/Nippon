@@ -148,7 +148,7 @@ body {
     left: 30%; 
     transform: translate(-50%, -50%);
     background-color: #FFF9F8;
-    padding: 2vw;
+    padding: 3vw;
     border-radius: 15px;
     text-align: center;
     border: 7px solid #256EB9;
@@ -159,7 +159,7 @@ body {
 .boks-maaltidskasser p {
     margin-top: 1vw;
     margin-bottom: 1vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     font-family: 'montserrat', sans-serif;
 }
@@ -167,6 +167,7 @@ body {
 .motion-graphic {
     position: absolute;
     top: -60%;
+    margin-right: 19%;
     right: -25%;
     max-width: 50%;
 }
