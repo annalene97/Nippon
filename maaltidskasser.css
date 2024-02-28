@@ -201,12 +201,14 @@ body {
     text-decoration: none;
     color: #FFF9F8;
     background-color: #ff6347;
+    border-radius: 15px;
 }
 
 .social-icons a:hover {
     color: #ff6347; 
     background-color: #FFF9F8; 
     border: 5px solid #ff6347;
+    border-radius: 15px;
 }
 
 
