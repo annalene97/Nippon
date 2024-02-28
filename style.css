@@ -33,6 +33,11 @@ img {
 
 /* --- HEADER --- */
 
+.fa-user {
+    margin-top: -5px;
+}
+
+
 .head1, .head2  {
     width: 50%;
     margin-right: 1.5rem;
