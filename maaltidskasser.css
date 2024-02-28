@@ -124,10 +124,15 @@ body {
 
 /*--- Banner billede ---*/
 
+.banner-maaltidskasser-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30vh; /* Use vh units for margin-top */
+}
+
 .banner-maaltidskasser {
     position: relative;
     width: 100%;
-    margin-top: 20%;
 }
 
 .banner-maaltidskasser img {
@@ -138,20 +143,21 @@ body {
 
 .boks-maaltidskasser {
     position: absolute;
-    top: -10%; 
-    left: 50%;
-    transform: translateX(-90%);
+    top: 50%; /* Adjust based on your design */
+    left: 30%; /* Adjust based on your design */
+    transform: translate(-50%, -50%);
     background-color: #FFF9F8;
-    padding: 50px;
+    padding: 4vw;
     border-radius: 15px;
     text-align: center;
-    width: 40%; 
     border: 7px solid #256EB9;
+    max-width: 80vw; /* Use vw units for max-width */
+    width: 500px; /* Set a fixed width or adjust based on your design */
 }
 
 .boks-maaltidskasser p {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     font-size: 1.5rem;
     color: black;
     font-family: 'montserrat', sans-serif;
@@ -159,7 +165,7 @@ body {
 
 .motion-graphic {
     position: absolute;
-    top: -55%;
+    top: -60%;
     right: -25%;
     max-width: 50%;
 }
@@ -195,12 +201,14 @@ body {
     text-decoration: none;
     color: #FFF9F8;
     background-color: #ff6347;
+    border-radius: 15px;
 }
 
 .social-icons a:hover {
     color: #ff6347; 
     background-color: #FFF9F8; 
     border: 5px solid #ff6347;
+    border-radius: 15px;
 }
 
 
