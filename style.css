@@ -935,6 +935,203 @@ img {
 /*--- MAIN SLUT ---*/
 
 
+/* -----------------------
+-------Maaltidskasser-----
+-------------------------- */
+
+.maaltidskasser-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-top: 2rem;
+}
+
+.maaltidskasser-h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem; 
+}
+
+.image-box {
+    position: relative;
+    width: 30%;
+    max-width: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    right: 0;
+    bottom: -40px; 
+    background-color: #C7E9FC;
+    pointer-events: none;
+    z-index: -1; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-title {
+    text-align: center;
+    margin-top: 2px; 
+    margin-bottom: 10px;
+    font-size: 2rem; 
+    color: black; 
+    font-family: 'dosis', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.info-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FFF9F8; 
+    color: black;
+    border-color: #FD6947;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'dosis', sans-serif;
+}
+
+.vaelg-button {
+    padding: 10px 50px;
+    font-size: 1.2rem;
+    background-color: #FD6947;
+    color: white;
+    border: 2px solid #FD6947;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'dosis', sans-serif;
+}
+
+/* Maaltidskasser SLUT */
+
+/* --- Hover for måltidskasse knapper START ---- */
+
+.info-button:hover {
+    color: #FD6947;
+}
+
+.vaelg-button:hover {
+    background-color: #FFF9F8;
+    color: #FD6947;
+    border: 2px solid #FD6947;
+}
+
+/* --- Hover for måltidskasse knapper SLUT ---- */
+
+/*--- Banner billede START ---*/
+
+.banner-maaltidskasser-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30vh;
+    padding-top: 25vh;
+}
+
+.banner-maaltidskasser {
+    position: relative;
+    width: 100%;
+}
+
+.banner-maaltidskasser img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.boks-maaltidskasser {
+    position: absolute;
+    top: 50%;
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    background-color: #FFF9F8;
+    padding: 3vw;
+    border-radius: 15px;
+    text-align: center;
+    border: 7px solid #256EB9;
+    max-width: 60vw;
+    width: 600px;
+}
+
+.boks-maaltidskasser p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+}
+
+.motion-graphic {
+    position: absolute;
+    top: -60%;
+    margin-right: 19%;
+    right: -25%;
+    max-width: 50%;
+}
+
+/* Banner billede SLUT */
+
+/* SoMe sektion START */
+
+.SoMe-titel {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.So-Me-titel h1 {
+    font-size: 2rem;
+    color: #256EB9;
+    font-family: 'dosis', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    height: 150px; 
+    font-size: 7rem; 
+    margin: 20px 130px 80px; 
+    text-decoration: none;
+    color: #FFF9F8;
+    background-color: #ff6347;
+    border-radius: 15px;
+}
+
+.social-icons a:hover {
+    color: #ff6347; 
+    background-color: #FFF9F8; 
+    border: 5px solid #ff6347;
+    border-radius: 15px;
+}
+
+/* SoME sektion SLUT */
 
 
 /* -----------------------
