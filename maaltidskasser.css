@@ -127,7 +127,7 @@ body {
 .banner-maaltidskasser-container {
     position: relative;
     width: 100%;
-    margin-top: 30vh; /* Use vh units for margin-top */
+    margin-top: 35vh;
 }
 
 .banner-maaltidskasser {
@@ -143,22 +143,22 @@ body {
 
 .boks-maaltidskasser {
     position: absolute;
-    top: 50%; /* Adjust based on your design */
-    left: 30%; /* Adjust based on your design */
+    top: 50%;
+    left: 30%; 
     transform: translate(-50%, -50%);
     background-color: #FFF9F8;
-    padding: 4vw;
+    padding: 3vw;
     border-radius: 15px;
     text-align: center;
     border: 7px solid #256EB9;
-    max-width: 80vw; /* Use vw units for max-width */
-    width: 500px; /* Set a fixed width or adjust based on your design */
+    max-width: 80vw;
+    width: 600px;
 }
 
 .boks-maaltidskasser p {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 1.5rem;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2rem;
     color: black;
     font-family: 'montserrat', sans-serif;
 }
@@ -174,7 +174,7 @@ body {
 
 .SoMe-titel {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-bottom: 10%;
 }
 
