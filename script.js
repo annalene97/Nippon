@@ -137,4 +137,12 @@ document.querySelectorAll('.tilfojret').forEach(item => {
 
 
 // TILFØJ TIL FAVORIT
+const favorit = document.querySelectorAll('.favorit i.fa-heart');
 
+favorit.forEach(hjerte) => {
+    hjerte.onclick = tilfojFavorit;
+    function tilfojFavorit() {
+        
+    }
+
+    }
