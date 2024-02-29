@@ -228,8 +228,8 @@ section
 
 .logo2 /* --- Footer logo --- */ {
    max-width: 40%;
+   margin-left: 35px;
 }
-
 
 section {
     color: #000000;
@@ -268,13 +268,13 @@ h4 {
     text-decoration: none;
   }
   
-  .fa-brands {
+ .fa-brands {
     padding: 5px;
     width: 30px;
     height: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 5px;
     border-radius: 100%;
     background: rgb(0, 0, 0);
     color: #C7E9FC;
