@@ -407,7 +407,7 @@ img {
  /* --- Bestil budgetkassen button --- */
 .custom-button {
     display: block;
-    margin: 80px auto 0;
+    mmargin: 45px 1px;
     padding: 10px 10px;
     width: 200px; 
     font-size: 16px;
